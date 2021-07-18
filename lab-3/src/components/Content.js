@@ -1,6 +1,7 @@
 import React from "react";
 
-const Content = () => {
+
+const Content = ({firstName}) => {
   return (
   <div className="container">
     <h1>Basic Navbar Example</h1>
