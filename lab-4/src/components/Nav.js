@@ -1,11 +1,12 @@
 import React from 'react';
 
+
 const Nav = () => {
   return (
     <nav className="navbar navbar-default">
     <div className="container-fluid">
       <div className="navbar-header">
-        <a className="navbar-brand" href="/#">WebSiteName</a>
+        <a className="navbar-brand" href="/#">WebsiteName</a>
       </div>
   <ul className="nav navbar-nav">
     <li className="active"><a href="/#">Home</a></li>
