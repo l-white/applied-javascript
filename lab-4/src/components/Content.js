@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Content = ({firstName}) => {
   return (
   <div className="container">

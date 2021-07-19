@@ -1,6 +1,9 @@
+import React from "react";
+import Admin from './SiteInfo';
+import FullName from './SiteInfo'
 const Footer = () => {
   return (
-    `Copyright ${new Date().getFullYear()}`
+    `Copyright ${Admin} ${new Date().getFullYear()}`
   );
 }
 
