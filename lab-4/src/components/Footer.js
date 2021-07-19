@@ -1,9 +1,15 @@
 import React from "react";
 import Admin from './SiteInfo';
 import FullName from './SiteInfo'
+
+const GetDate = () => {
+  return `Copyright ${new Date().getFullYear()}`;
+}
+
 const Footer = () => {
   return (
-    `Copyright ${Admin} ${new Date().getFullYear()}`
+    <div>{GetDate()} by <FullName /></div>
+    
   );
 }
 

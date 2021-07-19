@@ -12,6 +12,8 @@ const SiteInfo = () => {
   );
 }
 
+
+
 const Admin = ({firstName, lastName}) => {
   return (
     <div>
