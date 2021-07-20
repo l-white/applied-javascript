@@ -15,6 +15,4 @@ const App = () => {
   );
 }
 
-console.log(CreateHeader);
-
 export default App;
