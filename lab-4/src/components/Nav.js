@@ -1,7 +1,7 @@
 import React from 'react';
-import DisplayNav from './Webpages';
+import DisplayNav from './DisplayNav';
 
-const Nav = ({webpages}) => {
+const Nav = () => {
   return (
     <nav className="navbar navbar-default">
     <div className="container-fluid">
