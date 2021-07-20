@@ -1,5 +1,5 @@
 import React from "react";
-import Admin from './SiteInfo';
+import AdminInfo from './AdminInfo';
 
 const GetDate = () => {
   return `Copyright ${new Date().getFullYear()}`;
@@ -7,7 +7,7 @@ const GetDate = () => {
 
 const Footer = () => {
   return (
-    <div>{GetDate()} by <Admin /></div>
+    <div>{GetDate()} By <AdminInfo author="Laura White"/></div>
     
   );
 }
