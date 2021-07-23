@@ -1,6 +1,7 @@
 import React from 'react';
 
-let isWindy;
+let isWindy = "Yes";
+let notWindy = "No";
 
 class Wind extends React.Component {
 
@@ -12,20 +13,14 @@ class Wind extends React.Component {
         .then(response => response.json())
         .then(output => {
             this.setState({output: output.wind.speed});
-            console.log(output);
         }).catch(error => console.log(error));
     }
     getWindConditions(){
-        if (this.state.output > 30) {
-            isWindy = "Windy: Yes"
-        } else {
-            isWindy = "Windy: No"
-        }
-        return isWindy;
+      return (this.state.output > 30 ? isWindy : notWindy); 
     }
     render() {
         return (
-            <li>{this.getWindConditions()}</li>
+            <li>Windy: {this.getWindConditions()}</li>
         );
     }
 }

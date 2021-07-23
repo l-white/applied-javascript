@@ -9,13 +9,13 @@ class Temperature extends React.Component {
       fetch("https://mm214.com/demo.php")
       .then(response => response.json())
       .then(output => {
-          this.setState({output: output.main.temp});
+          this.setState({output: output.main.feels_like});
     }).catch(error => console.log(error));
   }
   
   render() {
       return (
-        <li>Temp in Fahrenheit: {TempConverter(this.state.output)} degrees</li>
+        <li>Feels Like: {TempConverter(this.state.output)} degrees</li>
       );
   }
 }

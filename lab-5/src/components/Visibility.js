@@ -1,6 +1,7 @@
 import React from 'react';
 
-let visibility;
+let goodVisibility = "Good";
+let poorVisibility = "Poor";
 
 class Visibility extends React.Component {
 
@@ -12,20 +13,15 @@ class Visibility extends React.Component {
         .then(response => response.json())
         .then(output => {
             this.setState({output: output.visibility});
-            console.log(output);
         }).catch(error => console.log(error));
     }
+
     getVisibility(){
-        if (this.state.output > 3000) {
-            visibility = "Visibility: Good"
-        } else {
-            visibility = "Visibility: Poor"
-        }
-        return visibility;
+      return (this.state.output > 30000 ? goodVisibility : poorVisibility); 
     }
     render() {
         return (
-            <li>{this.getVisibility()}</li>
+            <li>Visibility: {this.getVisibility()}</li>
         );
     }
 }

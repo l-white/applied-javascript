@@ -12,7 +12,6 @@ class City extends React.Component {
         .then(response => response.json())
         .then(output => {
             this.setState({output: output.name});
-            console.log(output);
         }).catch(error => console.log(error));
     }
 
