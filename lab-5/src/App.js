@@ -1,13 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Weather from './components/Weather';
+import City from './components/City';
+import Temperature from './components/Temperature';
+import Description from './components/Description';
+import Humidity from './components/Humidity'
+import Visibility from './components/Visibility';
+import Wind from './components/Wind';
+
 
 function App() {
 
   return (
-    <div className="App">
-      <Weather />
+    <div className="margin-left">
+      <City />
+      <ul>
+        <Temperature />
+        <Description />
+        <Humidity />
+        <Visibility />
+        <Wind />
+      </ul>
     </div>
   );
 }
