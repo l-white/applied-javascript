@@ -4,7 +4,12 @@ let goodVisibility = "Good";
 let poorVisibility = "Poor";
 
 class Visibility extends React.Component {
-
+    constructor (props) {
+        super(props);
+        this.getVisibility = this.getVisibility.bind(this);
+        console.log(this);
+    }
+    
     state = {
         output: []
     }
@@ -15,9 +20,9 @@ class Visibility extends React.Component {
             this.setState({output: output.visibility});
         }).catch(error => console.log(error));
     }
-
     getVisibility(){
-      return (this.state.output > 30000 ? goodVisibility : poorVisibility); 
+        //console.log(this);
+        return (this.state.output > 30000 ? goodVisibility : poorVisibility); 
     }
     render() {
         return (

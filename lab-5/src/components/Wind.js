@@ -4,7 +4,11 @@ let isWindy = "Yes";
 let notWindy = "No";
 
 class Wind extends React.Component {
-
+   constructor(props) {
+        super(props);
+        this.getWindConditions = this.getWindConditions.bind(this);
+    }
+    
     state = {
         output: []
     }
@@ -16,7 +20,8 @@ class Wind extends React.Component {
         }).catch(error => console.log(error));
     }
     getWindConditions(){
-      return (this.state.output > 30 ? isWindy : notWindy); 
+        console.log(this.context);
+        return (this.state.output > 30 ? isWindy : notWindy); 
     }
     render() {
         return (
