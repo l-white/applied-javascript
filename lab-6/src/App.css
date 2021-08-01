@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.blog-posts {
+  list-style: none;
+}

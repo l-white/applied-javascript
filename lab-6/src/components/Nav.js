@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className="navbar navbar-default">
     <div className="container-fluid">
       <div className="navbar-header">
-        <div className="navbar-brand"><Link to="/">WebsiteName</Link></div>
+        <div className="navbar-brand"><Link to="/">React Blog</Link></div>
       </div>
       <ul className="nav navbar-nav">
       <li>
