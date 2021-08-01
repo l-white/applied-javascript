@@ -1,11 +1,11 @@
 import React from "react";
 import Posts from '../components/Posts';
 
-const Blog = () => {
+const Blog = ({posts}) => {
   return (
     <>
-    <h1>Blog</h1>
-    <Posts />
+      <h1>Blog</h1>
+      <Posts posts={posts} />
     </>
   );
 }
